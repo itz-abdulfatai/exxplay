@@ -75,19 +75,19 @@ function Contact() {
             <div>
               <div className=" flex items-center gap-3">
                 {" "}
-                <i className="bx  bx-envelope"></i> email@mail.com
+                <i className="bx  bx-envelope"></i> info@exxplay.com
               </div>
-              <div className=" flex items-center gap-3">
+              {/* <div className=" flex items-center gap-3">
                 {" "}
                 <i className="bx bx-mobile-alt"></i> 08088 088 088
-              </div>
+              </div> */}
             </div>
             {/* socials */}
 
             <div className=" flex items-center gap-3">
               {socials.map((social, index) => {
                 return (
-                  <a
+                  <Link
                     to={social.link}
                     target="_blank"
                     key={index}
@@ -99,8 +99,14 @@ function Contact() {
                       <i className="bx w-full text-2xl hover:opacity-70 bxl-twitter"></i>
                     ) : social.name == "linkedIn" ? (
                       <i className="bx w-full text-2xl hover:opacity-70 bxl-linkedin"></i>
-                    ) : null}
-                  </a>
+                    ) : social.name == 'reddit' ? (
+                      <i className="bx w-full text-2xl hover:opacity-70 bxl-reddit"></i>
+                    ) : social.name == 'instagram' ? (
+                      <i className="bx w-full text-2xl hover:opacity-70 bxl-instagram-alt"></i>
+                    )
+                    
+                    :null}
+                  </Link>
                 );
               })}
             </div>

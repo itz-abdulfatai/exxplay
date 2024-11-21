@@ -274,17 +274,53 @@ export const testimonials = [
 export const socials = [
   {
     name: 'facebook', 
-    link: 'https://facebook.com',
+    link: 'https://web.facebook.com/profile.php?id=61566762272645&_rdc=1&_rdr',
   },
   {
     name: 'twitter', 
-    link: 'https://x.com',
+    link: 'https://x.com/EXXPLAY_',
   },
   {
     name: 'linkedIn', 
-    link: 'https://linkedin.com',
+    link: 'https://www.linkedin.com/in/exxplay-bb1930339/',
   },
+  {
+    name: 'reddit', 
+    link: 'https://www.reddit.com/user/Special-Bus-8711/',
+  },
+  {
+    name: 'instagram', 
+    link: 'https://www.instagram.com/exx_play/',
+  },
+  
   
 ]
 
+export const works = [
+  {
+    name: 'travel agency',
+    img: null,
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illum delectus, omnis veritatis, quam excepturi tempore perferendis maiores odit, quod sit. Eaque ut ullam cumque expedita corrupti illo! Vitae quia, voluptates enim illo amet similique, blanditiis, tenetur molestias unde quae et cumque nemo maiores ducimus dicta voluptatibus ad dolorum cupiditate.',
+    demo: ''
+  },
   
+
+]
+
+
+
+  
+export const services = [
+  {
+    name: 'Gamification Strategy',
+   
+    description: `Turn Your Vision into an Interactive Reality"
+We design tailored gamification frameworks for businesses and influencers. From leaderboards to loyalty systems, we help integrate game mechanics into your projects to boost engagement and achieve strategic goals.`
+  },
+  {
+    name: 'Brand Gamification',
+    description: `Create Memorable Interactions"
+We gamify your brand through interactive experiences, from custom mini-games to campaign-based challenges that leave a lasting impression on your audience.`
+  }
+]
+
