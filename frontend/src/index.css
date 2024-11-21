@@ -24,7 +24,6 @@
     backdrop-filter: blur(30px);
   }
 
-
   h1 {
     @apply md:text-7xl text-4xl max-md:mx-auto max-md:text-center  font-extrabold uppercase;
   }
@@ -48,14 +47,13 @@
     background: linear-gradient(to bottom, #f9d0bf 0%, #ee75d1 100%);
     /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
-
   }
   h3 {
     @apply text-2xl;
   }
 
   .flow-trans {
-    @apply bg-accent2 bg-opacity-10
+    @apply bg-accent2 bg-opacity-10;
   }
 
   .gradient {
@@ -111,7 +109,6 @@
 
   .smalll-grad {
     background: hsla(284, 32%, 23%, 0.3);
-    
 
     background: radial-gradient(
       circle,
@@ -165,8 +162,7 @@
   }
   .service-bg {
     @apply bg-accent bg-opacity-10;
-    backdrop-filter: blur(30px)
-    
+    backdrop-filter: blur(30px);
   }
 }
 
@@ -177,22 +173,19 @@
   }
 
   .glass-nav {
-
     background-color: rgba(255, 255, 255, 0.089);
     /* opacity: 24%; */
     backdrop-filter: blur(34px);
     /* border-top: 1px solid rgba(225, 225, 225, 0.4);
     border-left: 1px solid rgba(225, 225, 225, 0.4); */
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
-
   }
 
   .glass-form {
     background-color: var(--color-glass);
     backdrop-filter: blur(10px);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
-
-  } 
+  }
 }
 
 @layer utilities {

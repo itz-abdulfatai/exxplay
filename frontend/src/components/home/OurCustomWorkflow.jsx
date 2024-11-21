@@ -6,8 +6,8 @@ function OurCustomWorkflow() {
   return (
     <section className=" py-5 md:py-10 ">
       <h2 className="big mb-5">
-        our customised <br />
-        <span className=" text-grad"> workflow</span>
+       Concept to  <br />
+        <span className=" text-grad"> Creation</span>
       </h2>
       <div>
         {workflows.map((flow, index) =>
