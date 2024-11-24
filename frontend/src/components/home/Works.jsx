@@ -24,7 +24,7 @@ function Works() {
         > <h3 className="relative capitalize font-extrabold hidden md:block text-center text-sm transition-all duration-200 ease-linear group-hover:-translate-y-20 ">{work.name}</h3>
           <div className="  absolute bottom-10 right-10 hidden md:flex text-2xl rounded-full aspect-square box-border  justify-center items-center border-2 p-2 group-hover:hidden"><i className='bx bx-pointer'></i></div>
             <div className=" h-full w-full relative md:-bottom-[500px]  md:group-hover:bottom-5 bg-[rgba(0,0,0,0.2)] rounded-3xl p-5 transition-all duration-200 ease-linear  flex flex-col gap-1 md:gap-5 items-center text-center justify-center glass-work backdrop-blur-xl border border-[#ffffff3b] group">
-                <h3 className=" capitalize font-[800]">{work.name}</h3>
+                <h3 className=" capitalize font-[800] text-sm">{work.name}</h3>
 
                 <p className=" text-xs md:text-sm" >{work.description}</p>
                 {/* <i className=' text-5xl bx bxs-right-top-arrow-circle  group-hover:text-secondary '></i> */}

@@ -298,9 +298,9 @@ export const socials = [
 
 export const works = [
   {
-    name: 'travel      agency',
+    name: 'travel agency',
     img: null,
-    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illum delectus, omnis veritatis, quam excepturi tempore perferendis maiores odit, quod sit. Eaque ut ullam cumque expedita corrupti illo! Vitae quia, voluptates enim illo amet similique, blanditiis, tenetur molestias unde quae et cumque nemo maiores ducimus dicta voluptatibus ad dolorum cupiditate.',
+    description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illum delectus, omnis veritatis, quam excepturi tempore perferendis maiores odit, quod sit. Eaque ut ullam cumque expcta voluptatibus ad dolorum cupiditate.',
     demo: ''
   },
   {
