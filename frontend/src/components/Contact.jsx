@@ -52,18 +52,19 @@ function Contact() {
   }
 
   return (
-    <section className=" min-h-[60vh] bg-cover " id="contact">
-      <div className="p-5 glass-nav border bg-cover bg-center  relative border-[#ffffff48] rounded-3xl md:p-10 " style={{backgroundImage: `url(/bg.jpg)`}}>
+    <section className=" min-h-[60vh] py-5 md:py-10 " id="contact" >
+      <div className="p-5 glass-nav border   relative border-[#ffffff48] rounded-3xl md:p-10 z-40 " >
         {!isHome && (
           <Link to="/" className=" flex items-center mb-5 ">
             <i className="bx bx-arrow-back mr-5 "></i>
             <span className="underline">Home</span>{" "}
           </Link>
         )}
+          <div className="absolute top-0 left-0 right-0 bottom-0 bg-black rounded-3xl -z-20  blur-sm bg-cover bg-center" style={{backgroundImage: `url(/bg.jpg)`}}></div>
         <h2 className=" text-2xl md:text-5xl max-md:text-center mb-5 font-extrabold uppercase max-w-[600px]">
           Let&apos;s discuss your idea
         </h2>
-        <div className=" flex flex-col md:flex-row gap-5 md:gap-10" >
+        <div className=" flex flex-col md:flex-row gap-5 md:gap-10 relative" >
           <div className="w-full flex flex-col gap-5 md:justify-between">
             <p className=" text-sm max-w-[600px]">
               Feel free to contact us for any inquiries, collaborations, or
