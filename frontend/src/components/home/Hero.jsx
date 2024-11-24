@@ -62,7 +62,7 @@ function Hero() {
           </a>
         </div>
         <div className=" max-md:text-center text-xs md:max-w-96 text-right flex flex-col items-center justify-around md:items-end h-full small-grad ">
-        Empowering brands and influencers with custom-built hyper-casual games to drive engagement, amplify reach, and gamify business success. Let&apos;s turn your ideas into interactive experiences that captivate your audience.
+        Empowering brands and influencers with custom-built games to drive engagement, amplify reach, and gamify business success. Let&apos;s turn your ideas into interactive experiences that captivate your audience.
           <button className=" hover:opacity-70 max-sm:text-[8px] uppercase border p-2 rounded-full flex justify-between items-center gap-2 glass-btn">
             {" "}
             <i className="bx bx-globe max-sm:text-sm"></i>world class startup

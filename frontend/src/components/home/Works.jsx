@@ -2,7 +2,7 @@ import { works } from "../../assets/constants";
 
 function Works() {
   return (
-    <section className=" py-5 md:py-10">
+    <section className=" py-5 md:py-10" id="portfolio">
       <h2 className=" capitalize font-extrabold md:text-5xl text-2xl text-center     mb-5 text-wrap">
         Interactive <span className="text-grad">Showcase</span>
       </h2>
@@ -19,11 +19,11 @@ function Works() {
             })`,
           }}
         >
-            <div className="relative md:-bottom-[500px] md:group-hover:bottom-0 bg-[rgba(0,0,0,0.2)] rounded-3xl p-5 transition-all duration-100 ease-linear  flex flex-col gap-5 items-center text-center justify-center glass-work border border-[#ffffff3b]">
+            <div className="relative md:-bottom-[500px] md:group-hover:bottom-0 bg-[rgba(0,0,0,0.2)] rounded-3xl p-5 transition-all duration-200 ease-linear  flex flex-col gap-1 md:gap-5 items-center text-center justify-center glass-work border border-[#ffffff3b] group">
                 <h3 className=" capitalize font-[800]">{works[0].name}</h3>
 
-                <p>{works[0].description}</p>
-                <i className=' text-5xl bx bxs-right-top-arrow-circle'></i>
+                <p className=" text-xs md:text-sm" >{works[0].description}</p>
+                <i className=' text-5xl bx bxs-right-top-arrow-circle  group-hover:text-secondary '></i>
             </div>
 
         </div>

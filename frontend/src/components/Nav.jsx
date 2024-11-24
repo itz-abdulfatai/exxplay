@@ -48,13 +48,13 @@ useEffect(() => {
       </a>
       <a href="#portfolio" onClick={()=> setActive('portfolio')} className=" uppercase flex items-center gap-2">
         {" "}
-        <Circle active={active === "portfolio"} /> portfolio
+        <Circle active={active === "portfolio"} /> showcase
       </a>
       
-      <a href="#reviews" onClick={()=> setActive('reviews')} className=" uppercase flex items-center gap-2">
+      {/* <a href="#reviews" onClick={()=> setActive('reviews')} className=" uppercase flex items-center gap-2">
         {" "}
         <Circle active={active === "reviews"} /> reviews
-      </a>
+      </a> */}
     </nav>
   )
 }

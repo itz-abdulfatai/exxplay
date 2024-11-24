@@ -52,8 +52,8 @@ function Contact() {
   }
 
   return (
-    <section className=" min-h-[60vh] " id="contact">
-      <div className="p-5 glass-nav border  relative border-[#ffffff48] rounded-3xl md:p-10">
+    <section className=" min-h-[60vh] bg-cover " id="contact">
+      <div className="p-5 glass-nav border bg-cover bg-center  relative border-[#ffffff48] rounded-3xl md:p-10 " style={{backgroundImage: `url(/bg.jpg)`}}>
         {!isHome && (
           <Link to="/" className=" flex items-center mb-5 ">
             <i className="bx bx-arrow-back mr-5 "></i>
@@ -63,7 +63,7 @@ function Contact() {
         <h2 className=" text-2xl md:text-5xl max-md:text-center mb-5 font-extrabold uppercase max-w-[600px]">
           Let&apos;s discuss your idea
         </h2>
-        <div className=" flex flex-col md:flex-row gap-5 md:gap-10">
+        <div className=" flex flex-col md:flex-row gap-5 md:gap-10" >
           <div className="w-full flex flex-col gap-5 md:justify-between">
             <p className=" text-sm max-w-[600px]">
               Feel free to contact us for any inquiries, collaborations, or

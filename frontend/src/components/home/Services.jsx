@@ -33,7 +33,7 @@ function Services() {
           {
             services.map(service => (
 <>
-        <div key={service.name} onClick={()=> {setActiveService(service)}} className="  md:min-h-20 md:px-5 gap-2 flex flex-col w-[97%] border-[#ffffff1a]  ">
+        <div key={service.name} onClick={()=> {if (activeService == service) {setActiveService(null)}else {setActiveService(service)}}} className="  md:min-h-20 md:px-5 gap-2 flex flex-col w-[97%] border-[#ffffff1a]  ">
         <div className="md:hover:bg-primary rounded-2xl px-5 flex justify-between items-center py-5 cursor-pointer">
 
           <h4 className=" text-xl  md:text-5xl font-bold">{service.name}</h4>
