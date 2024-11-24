@@ -60,7 +60,7 @@ function Contact() {
             <span className="underline">Home</span>{" "}
           </Link>
         )}
-          <div className="absolute top-0 left-0 right-0 bottom-0 bg-black rounded-3xl -z-20  blur-sm bg-cover bg-center" style={{backgroundImage: `url(/bg.jpg)`}}></div>
+          <div className="absolute top-0 left-0 right-0 bottom-0 bg-black rounded-3xl -z-20  blur-sm bg-cover bg-center" style={{backgroundImage: `url(/bg-2.jpg)`}}></div>
         <h2 className=" text-2xl md:text-5xl max-md:text-center mb-5 font-extrabold uppercase max-w-[600px]">
           Let&apos;s discuss your idea
         </h2>

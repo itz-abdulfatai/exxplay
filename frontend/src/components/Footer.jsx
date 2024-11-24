@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className=" py-10 padding-x flex justify-between items-center">
       <div className=" font-syne font-extrabold  text-md  uppercase md:text-xl">
-      exxplay <span className=" text-[8px] font-bold">from lightworks</span>
+      exxplay <span className=" text-[8px] font-bold">from lightwoorks</span>
     </div>
     
     <Nav/>
