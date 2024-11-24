@@ -12,7 +12,7 @@ function Works() {
 
       <div className="flex flex-col md:flex-row justify-start md:justify-center items-center md:items-center gap-10 pt-10 ">
         <div
-          className=" overflow-hidden w-full aspect-square max-w-[500px]  rounded-3xl cursor-pointer bg-cover flex justify-stretch items-stretch p-5 md:p-10 group "
+          className=" overflow-hidden w-full aspect-square max-w-[400px]  rounded-3xl cursor-pointer bg-cover flex justify-stretch items-stretch p-5 md:p-10 group "
           style={{
             backgroundImage: `url(${
               works[0].img || "https://picsum.photos/600"
@@ -23,12 +23,14 @@ function Works() {
                 <h3 className=" capitalize font-[800]">{works[0].name}</h3>
 
                 <p className=" text-xs md:text-sm" >{works[0].description}</p>
-                <i className=' text-5xl bx bxs-right-top-arrow-circle  group-hover:text-secondary '></i>
+                {/* <i className=' text-5xl bx bxs-right-top-arrow-circle  group-hover:text-secondary '></i> */}
+                <button className=" bg-secondary text-primary py-1 px-4 rounded-md capitalize font-bold hover:bg-accent hover:text-secondary">demo</button>
+
             </div>
 
         </div>
         <div
-          className=" overflow-hidden w-full aspect-square max-w-[500px]  rounded-3xl cursor-pointer bg-cover flex justify-stretch items-stretch p-5 md:p-10 group "
+          className=" overflow-hidden w-full aspect-square max-w-[400px]  rounded-3xl cursor-pointer bg-cover flex justify-stretch items-stretch p-5 md:p-10 group "
           style={{
             backgroundImage: `url(${
               works[1].img || "https://picsum.photos/600"
@@ -39,7 +41,8 @@ function Works() {
                 <h3 className=" capitalize font-[800]">{works[1].name}</h3>
 
                 <p className=" text-xs md:text-sm" >{works[1].description}</p>
-                <i className=' text-5xl bx bxs-right-top-arrow-circle  group-hover:text-secondary '></i>
+                {/* <i className=' text-5xl bx bxs-right-top-arrow-circle  group-hover:text-secondary '></i> */}
+                <button className=" bg-secondary text-primary py-1 px-4 rounded-md capitalize font-bold hover:bg-accent hover:text-secondary">demo</button>
             </div>
 
         </div>
