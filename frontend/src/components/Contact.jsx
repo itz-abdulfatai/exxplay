@@ -33,7 +33,7 @@ function Contact() {
     e.preventDefault() 
     setStatus('loading.....')
     try {
-      const response = await axios.post('/api/contacts12f', {
+      const response = await axios.post('https://hooks.zapier.com/hooks/catch/21001077/2swabnp/', {
         name: formData.name,
         email: formData.email,
         companyName: formData.companyName,

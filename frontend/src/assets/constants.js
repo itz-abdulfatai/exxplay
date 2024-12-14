@@ -299,13 +299,13 @@ export const socials = [
 export const works = [
   {
     name: 'travel agency',
-    img: null,
+    img: `/traveling-agency.jpeg`,
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illum delectus, omnis veritatis, quam excepturi tempore perferendis maiores odit, quod sit. Eaque ut ullam cumque expcta voluptatibus ad dolorum cupiditate.',
     demo: ''
   },
   {
     name: 'CTG',
-    img: null,
+    img: `/ctg.png`,
     description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum illum delectus, omnis veritatis, quam excepturi tempore perferendis maiores odit, quod sit. Eaque ut ullam cumque expcta voluptatibus ad dolorum cupiditate.',
     demo: ''
   },

@@ -184,7 +184,7 @@
   .glass-work {
 
     /* opacity: 24%; */
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(7px);
     /* border-top: 1px solid rgba(225, 225, 225, 0.4);
     border-left: 1px solid rgba(225, 225, 225, 0.4); */
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
@@ -195,6 +195,12 @@
     backdrop-filter: blur(10px);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
   }
+}
+
+.text-stroke {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.219);
+  text-shadow: 1px 1px black, 2px 2px black, 4px 4px 4px rgba(0, 0, 0, 0.404);
 }
 
 @layer utilities {
