@@ -33,15 +33,30 @@ function Contact() {
     e.preventDefault() 
     setStatus('loading.....')
     try {
-      const response = await axios.post('https://hooks.zapier.com/hooks/catch/21001077/2swabnp/', {
+      const response = await axios.post(import.meta.env.VITE_ZAP_API, {
         name: formData.name,
         email: formData.email,
         companyName: formData.companyName,
         ...(formData.otherDetails && { otherDetails: formData.otherDetails })
         
-      })
-      // console.log(response.data)
-      setStatus(response.data.msg)
+      },
+      {
+        transformRequest: [(data, headers) => {
+          delete headers['Content-Type']; // Remove Content-Type
+          return JSON.stringify(data);
+        }]})
+      console.log(response.data)
+      if (response.data.status == 'success') {
+        setStatus(' your message has been recieved we will contact you soon')
+        setFormData({
+          name: '',
+          email: '',
+          companyName: '',
+          otherDetails: ''
+        })
+
+      }
+      // setStatus(response.data.msg)
       
     } catch (error) {
       console.error(error.message)
