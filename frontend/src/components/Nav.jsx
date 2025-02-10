@@ -28,6 +28,11 @@ useEffect(() => {
             setActive('reviews')
             
             break;
+
+            case '#waitlist':
+              setActive('waitlist')
+              
+              break;
             
     
         default:
@@ -50,6 +55,12 @@ useEffect(() => {
         {" "}
         <Circle active={active === "portfolio"} /> showcase
       </a>
+      <a href="#waitlist" onClick={()=> setActive('waitlist')} className=" uppercase flex items-center gap-2">
+        {" "}
+        <Circle active={active === "waitlist"} /> wishlist
+      </a>
+
+      {/* waitlist */}
       
       {/* <a href="#reviews" onClick={()=> setActive('reviews')} className=" uppercase flex items-center gap-2">
         {" "}

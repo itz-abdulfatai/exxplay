@@ -7,6 +7,7 @@ import Services from "../components/home/Services";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import Works from "../components/home/Works";
+// import Waitlist from "../components/home/Waitlist";
 
 function Home() {
   return (
@@ -29,6 +30,7 @@ function Home() {
 
       {/* testimonial */}
       {/* <Testimonials/> */}
+      {/* <Waitlist/> */}
 
       {/* works */}
       <Works/>

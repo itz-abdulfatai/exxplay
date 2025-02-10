@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage"
 import NotFound from "./pages/NotFound"
 import Hidden from "./pages/Hidden"
 import Demo from "./pages/Demo"
+import CtgWaitlist from "./pages/CtgWaitlist"
 
 // @access public
 function App() {
@@ -24,6 +25,7 @@ function App() {
     <Routes>
 <Route path="/" exact element={<Home/>}/>
 <Route path="/contact" element={<ContactPage/>}/>
+<Route path="/waitlist" element={<CtgWaitlist/>}/>
 <Route path="/12f12f12f12f12f12f12f12f12f12f12f12f12f12f12f12f12f12f12f12f12f12f12f12f" element={<Hidden/>}/>
 <Route path="/demo/:id" element={<Demo/>}/>
 <Route path="*" element={<NotFound/>}/>

@@ -14,6 +14,12 @@ app.use(morgan('dev'))
 app.use('/api', router)
 
 
+// quick feature release bulk email campaign
+app.get('/api/ctg-release', (req, res) => {
+    
+})
+
+
 
 app.get("/", (req, res) => res.send("api hit"));
 

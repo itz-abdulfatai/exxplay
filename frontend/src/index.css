@@ -42,6 +42,10 @@
     -webkit-text-fill-color: transparent;
   }
 
+  input:focus {
+    outline: none;
+  }
+
   .fill-grad {
     background: #f9d0bf;
     background: linear-gradient(to bottom, #f9d0bf 0%, #ee75d1 100%);
@@ -54,6 +58,14 @@
 
   .flow-trans {
     @apply bg-accent2 bg-opacity-10;
+  }
+
+  .frm-input {
+    @apply bg-transparent border p-2 rounded-xl w-full capitalize border-secondary placeholder:text-xs md:placeholder:text-sm text-secondary appearance-none focus:placeholder:opacity-30
+  }
+
+  .frm-input:focus:invalid {
+    border-color: rgb(248, 71, 71);
   }
 
   .gradient {
@@ -73,6 +85,9 @@
       hsla(0, 0%, 0%, 1) 82%,
       hsla(0, 0%, 0%, 1) 94%
     );
+
+
+
 
     background: -moz-linear-gradient(
       315deg,
@@ -212,3 +227,10 @@
     @apply sm:py-24 py-12;
   }
 }
+
+
+
+#mc_embed_signup {background:#fff;
+   clear:left; font:14px Helvetica,Arial,sans-serif; width: 500px;}
+/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
