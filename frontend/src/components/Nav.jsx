@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { Circle } from "./Header"
-import {  useLocation } from "react-router-dom"
+import {  Link, useLocation } from "react-router-dom"
 
 function Nav() {
     const [active, setActive] = useState('home')
@@ -55,10 +55,10 @@ useEffect(() => {
         {" "}
         <Circle active={active === "portfolio"} /> showcase
       </a>
-      <a href="#waitlist" onClick={()=> setActive('waitlist')} className=" uppercase flex items-center gap-2">
+      <Link to="/waitlist" onClick={()=> setActive('waitlist')} className=" uppercase flex items-center gap-2">
         {" "}
         <Circle active={active === "waitlist"} /> wishlist
-      </a>
+      </Link>
 
       {/* waitlist */}
       

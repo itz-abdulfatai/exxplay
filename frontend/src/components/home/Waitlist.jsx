@@ -1,11 +1,15 @@
 import { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
+import Footer from "../Footer";
 
 function Waitlist() {
   const [formData, setFormData] = useState({ name: "", mail: "", company: "",industry: "", price: '', expectation: '', feature: '',benefits: '' });
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
+  const [step, setStep] = useState(1);
+
 
   async function handleSubmit(e) {
     setLoading(true);
@@ -40,8 +44,61 @@ function Waitlist() {
     }
   }
 
+  function proceed () {
+    setStep(step + 1)
+    // console.log(step)
+  }
+
   return (
+
+    <>
+    {/* header */}
+
+    <header className=" padding-x py-7 absolute left-0 right-0 flex justify justify-between items-center">
+    <div className=" font-syne font-extrabold  text-md  uppercase md:text-xl">
+      exxplay
+    </div>
+    <Link
+      to="/contact"
+      className=" uppercase px-2 md:px-5 py-[3px] md:py-[5px] border-2 rounded-full"
+    >
+      contact now
+    </Link>
+  </header>
+
+{/* {
+      step == 1 && 
+    <section className="flex flex-col gap-10 items-center py-20">
+    
+    </section>
+    } */}
+
+    {
     <section id="waitlist" className="gradient py-20 text-center bg-accent text-secondary">
+
+      {
+        step == 1 && 
+        <div  className="flex flex-col items-center gap-5">
+          <h1 className="text-xl md:text-3xl">the waitlist talk</h1>
+    <div className="w-full max-w-[600px] flex flex-col items-center gap-5">
+      <h2 className="text-xl">section heading</h2>
+        <p className="text-justify">cing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?cing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?cing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?</p>
+      </div>      <div className="w-full max-w-[600px] flex flex-col items-center gap-5">
+        <h2 className="text-xl">section heading</h2>
+        <p className="text-justify">cing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?cing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?cing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?</p>
+      </div>      <div className="w-full max-w-[600px] flex flex-col items-center gap-5">
+        <h2 className="text-xl">section heading</h2>
+        <p className="text-justify">cing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?cing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?cing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minus possimus molestiae autem dolores adipisci culpa obcaecati soluta accusamus sapiente architecto iure pariatur vitae, quis quasi at ut ab? Laborum?</p>
+      </div>
+
+      <button onClick={() => proceed()} className=" disabled:bg-accent disabled:text-primary px-10 py-2 hover:text-primary hover:bg-secondary border border-secondary rounded-xl transition">
+           show me the waitlist
+          </button>
+        </div>
+      }
+
+      {
+      step == 2 && 
       <div className="flex flex-col gap-5 w-full max-w-[500px] mx-auto">
         <h2 className=" text-2xl">
           {" "}
@@ -142,7 +199,16 @@ function Waitlist() {
           </button>
         </form>
       </div>
+
+      }
+
+      
     </section>
+    }
+
+
+    <Footer/>
+    </>
   );
 }
 
